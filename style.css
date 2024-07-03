@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #F3FF90;
+}
+
+.btns{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 4px solid black;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#red{
+    background: hwb(0 8% 6%);
+}
+#yellow{
+    background-color: #f6c833;
+}
+#blue{
+    background: #57d2ff;
+}
+#green{
+    background: #06D001;
+}
+
+.msg-container{
+    height: 2rem;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 0rem 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#msg{
+    background-color: #059212;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: medium;
+    font-weight: 1000;
+    color: #F3FF90;
+}
+
+.start{
+    background-color: #059212;
+    align-items: center;
+    height: 2.5rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    color: #F3FF90;
+}
+.reset{
+    background-color: #059212;
+    align-items: center;
+    height: 2.5rem;
+    margin: 2rem 0rem 1rem 0rem;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    color: #F3FF90;
+}
+.flash {
+    animation: flash-animation 0.1s forwards;
+}
+
+@keyframes flash-animation {
+    0% { background-color: yellow; } /* Starting color of the flash */
+    100% { background-color: initial; } /* Final color (original color of the button) */
+}
+
+.userflash{
+    animation: userflash-animation 0.1s forwards;
+}
+
+@keyframes userflash-animation {
+    0% { background-color: white; } /* Starting color of the flash */
+    100% { background-color: initial; } /* Final color (original color of the button) */
+}
+
+h1{
+    background-color: #059212;
+    margin: 0rem 0rem 2rem 0rem;
+    color: #F3FF90;
+    height: 2.5rem;
+    padding: 0rem 0rem ;
+    text-align: center;
+}
